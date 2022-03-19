@@ -1,0 +1,24 @@
+  <h1>ola vamos no handlebars</h1>
+<p>algum texto do site</p>
+<p>ola {{user.name}}, voce esta completando {{user.age}} anos de vida em setembro</p>
+<p>Meu carro e {{carro.modelo}}, na cor {{carro.cor}} </p>
+
+{{#if approved}}
+ {{!-- //esta sintaxe e para er usado em front --}}
+ {{!-- se o approved for tru ira apacer na viwes mas se for false nao ira aparecer ira imprimir o else para nos --}}
+  <p>Parabéns, o seu cadastro está aprovado!</p>
+{{else}}
+  <p>O seu cadastro ainda necessita de aprovação!</p>
+{{/if}}
+
+{{#if autenticador}}
+ {{!-- //esta sintaxe e para er usado em front --}}
+ {{!-- se o autenticador for tru ira apacer na viwes mas se for false nao ira aparecer --}}
+<p>
+voce esta autenticado <a href="/Deckboard">click me</a> para acessar a area de menbbros!
+
+</p>
+{{/if}}
+
+
+
